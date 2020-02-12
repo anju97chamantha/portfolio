@@ -1,0 +1,14 @@
+<!-- <app-content></app-content> -->
+
+
+<router-outlet></router-outlet>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">
+        <app-side-bar></app-side-bar>
+        <!-- SideNav -->
+    </mat-sidenav>
+    <mat-sidenav-content>
+        Content
+        <button (click)="opened=!opened">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
